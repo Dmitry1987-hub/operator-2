@@ -28,7 +28,7 @@ public class Main {
         int year1 = 1584;
 
 
-        if (year % 4 == 0 && year % 100 != 0 || year1 % 400 == 0) {
+        if (year >= 1582 && ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
